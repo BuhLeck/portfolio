@@ -187,3 +187,47 @@ nav a:hover {
     border-radius: 20px;
     letter-spacing: 0.5px;
 }
+
+/* - About - */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 48px;
+    align-items: start;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.about-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--slate-light);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.fact {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.fact-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--slate-mid);
+}
+
+.fact-value {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--navy);
+}
