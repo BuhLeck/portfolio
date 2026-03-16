@@ -125,3 +125,65 @@ nav a:hover {
     color: var(--white);
     border-bottom: none;
 }
+
+/* - Projects - */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px
+}
+
+.project-card {
+    background-color: var(--white);
+    border: 1px solid var(--slate-light);
+    border-radius: 8px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transform: translateY(-2px);
+}
+
+.project-card.placeholder {
+    border-style: dashed;
+    opacity: 0.5;
+}
+
+.project-card h3 {
+    font-size: 1.1rem;
+    color: var(--navy);
+    font-weight: 600;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    color: var(--slate-mid);
+    flex-grow: 1;
+}
+
+.project-card a {
+    font-size: 0.9rem;
+    align-self: flex-start;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: var(--slate-light);
+    color: var(--slate);
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
