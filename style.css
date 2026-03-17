@@ -97,6 +97,11 @@ footer {
     border-top: 1px solid var(--slate-light);
 }
 
+footer p {
+    max-width: 100%;
+    text-align: center;
+}
+
 /* - Navigation - */
 
 .header-content {
@@ -128,7 +133,7 @@ nav a:hover {
 
 /* - Projects - */
 
-.project-grid {
+.projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 24px
