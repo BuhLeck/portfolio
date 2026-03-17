@@ -231,3 +231,15 @@ nav a:hover {
     font-weight: 600;
     color: var(--navy);
 }
+
+.card-links {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.card-links a:last-child {
+    color: var(--slate-mid);
+    border-bottom-color: transparent;
+    font-weight: 500;
+}
